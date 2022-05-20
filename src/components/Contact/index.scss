@@ -97,7 +97,7 @@
   right: 30%;
   z-index: 999999;
   width: 267px;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   font-family: 'Helvetica';
   font-size: 17px;
@@ -112,5 +112,11 @@
     span {
       color: #ffd700;
     }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .map-wrap,.info-map {
+    display: none;
   }
 }

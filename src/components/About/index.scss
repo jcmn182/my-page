@@ -79,3 +79,11 @@
     transform: rotateX(90deg);
   }
 }
+
+@media only screen and (max-width: 940px) {
+
+  .stage-cube-cont{
+      display:none
+  }
+
+}

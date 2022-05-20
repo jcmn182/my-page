@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
+  faNodeJs,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -16,7 +16,7 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -47,11 +47,10 @@ const About = () => {
             photography enthusiast, and tech-obsessed!!!
           </p>
         </div>
-
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

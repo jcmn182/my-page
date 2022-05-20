@@ -1,4 +1,5 @@
 .home-page {
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -8,7 +9,7 @@
     max-height: 90%;
   }
 
-  h1 {
+  .main-text {
     color: #fff;
     font-size: 56px;
     line-height: 53px;
@@ -80,4 +81,19 @@
   }
 }
 
+
+@media only screen and (max-width: 940px) {
+
+  .home-page {
+
+    .main-text {
+      font-size: 40px;
+    }
+
+  .text-zone {
+    width:80%;
+  }
+
+  }
+}
 
