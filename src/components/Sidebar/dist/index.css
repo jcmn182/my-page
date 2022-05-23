@@ -7,6 +7,47 @@
   z-index: 3;
   min-height: 500px;
 }
+.nav-bar .nav-responsive-in {
+  animation: nav-bar-in 0.5s ease-out both;
+  background: #181818;
+  opacity: 0.5;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+.nav-bar .nav-responsive-in .container-mobile-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar .nav-responsive-in a {
+  font-size: 22px;
+  color: #4d4d4e;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+.nav-bar .nav-responsive-in a i {
+  transition: all 0.3s ease-out;
+}
+.nav-bar .nav-responsive-out {
+  display: none;
+}
+.nav-bar .nav-responsive-out .container-mobile-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar .nav-responsive-out a {
+  font-size: 22px;
+  color: #4d4d4e;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+.nav-bar .nav-responsive-out a i {
+  transition: all 0.3s ease-out;
+}
 .nav-bar .icon-menu {
   display: none;
 }
@@ -20,7 +61,7 @@
   width: 64px;
   height: auto;
 }
-.nav-bar nav {
+.nav-bar .nav {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -30,7 +71,7 @@
   margin-top: -120px;
   width: 100%;
 }
-.nav-bar nav a {
+.nav-bar .nav a {
   font-size: 22px;
   color: #4d4d4e;
   line-height: 51px;
@@ -38,19 +79,19 @@
   position: relative;
   text-decoration: none;
 }
-.nav-bar nav a i {
+.nav-bar .nav a i {
   transition: all 0.3s ease-out;
 }
-.nav-bar nav a:hover {
+.nav-bar .nav a:hover {
   color: #ffd700;
 }
-.nav-bar nav a:hover svg {
+.nav-bar .nav a:hover svg {
   opacity: 0;
 }
-.nav-bar nav a:hover:after {
+.nav-bar .nav a:hover:after {
   opacity: 1;
 }
-.nav-bar nav a:after {
+.nav-bar .nav a:after {
   content: "";
   font-size: 9px;
   letter-spacing: 2px;
@@ -63,25 +104,25 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.nav-bar nav a:first-child:after {
+.nav-bar .nav a:first-child:after {
   content: "HOME";
 }
-.nav-bar nav a.about-link:after {
+.nav-bar .nav a.about-link:after {
   content: "ABOUT";
 }
-.nav-bar nav a.contact-link:after {
+.nav-bar .nav a.contact-link:after {
   content: "CONTACT";
 }
-.nav-bar nav a.work-link:after {
+.nav-bar .nav a.work-link:after {
   content: "WORK";
 }
-.nav-bar nav a.contact-link:after {
+.nav-bar .nav a.contact-link:after {
   content: "CONTACT";
 }
-.nav-bar nav a.skills-link:after {
+.nav-bar .nav a.skills-link:after {
   content: "SKILLS";
 }
-.nav-bar nav a.active svg {
+.nav-bar .nav a.active svg {
   color: #ffd700;
 }
 .nav-bar ul {
@@ -129,7 +170,15 @@
     width: 90px;
     height: 90px;
   }
-  .nav-bar nav, .nav-bar ul {
+  .nav-bar .nav, .nav-bar ul {
     display: none;
+  }
+}
+@keyframes nav-bar-in {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
   }
 }

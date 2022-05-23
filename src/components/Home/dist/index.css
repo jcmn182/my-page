@@ -14,27 +14,6 @@
   font-family: "Coolvetica";
   font-weight: 400;
 }
-.home-page .main-text:before {
-  content: "<h1>";
-  font-family: "La Belle Aurore", cursive;
-  color: #ffd700;
-  font-size: 18px;
-  position: absolute;
-  margin-top: -40px;
-  left: -15px;
-  opacity: 0.6;
-}
-.home-page .main-text:after {
-  content: "<h1/>";
-  font-family: "La Belle Aurore", cursive;
-  color: #ffd700;
-  font-size: 18px;
-  position: absolute;
-  margin-top: 18px;
-  margin-left: 20px;
-  animation: fadeIn 1s 1.7s backwards;
-  opacity: 0.6;
-}
 .home-page .main-text img {
   margin-left: 20px;
   opacity: 0;
@@ -73,7 +52,7 @@
 
 @media only screen and (max-width: 940px) {
   .home-page .main-text {
-    font-size: 40px;
+    font-size: 33px;
   }
   .home-page .text-zone {
     width: 80%;

@@ -1,8 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import Layout from './components/Layout'
+import Work from './components/Work'
+import Skills from './components/Skills'
 import './App.scss'
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/skills" element={<Skills />} />
         </Route>
       </Routes>
     </>
