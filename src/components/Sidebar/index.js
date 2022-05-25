@@ -6,7 +6,7 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faBriefcase, faScrewdriverWrench, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faScrewdriverWrench, faBars} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import {useSizeScreen} from '../../hooks/useSizeScreen';
 
@@ -38,9 +38,6 @@ const Sidebar = () => {
         <NavLink activeclassname="active" className="about-link" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="work-link" to="/work">
-          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
-        </NavLink>
         <NavLink activeclassname="active" className="contact-link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
@@ -48,16 +45,13 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d4e" />
         </NavLink>
         </nav>):
-        (<nav className={isVisible?"nav-responsive-in":"nav-responsive-out"}>
+        (<nav className={isVisible?"nav-responsive-in":"nav-responsive-out"} onClick={()=>setMenu()}>
         <div className="container-mobile-nav">
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink activeclassname="active" className="about-link" to="/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink activeclassname="active" className="work-link" to="/work">
-          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
         </NavLink>
         <NavLink activeclassname="active" className="contact-link" to="/contact">
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

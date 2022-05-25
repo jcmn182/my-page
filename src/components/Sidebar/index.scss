@@ -38,7 +38,7 @@
 .nav-responsive-out{
   display:none;
 
-  .container-mobile-nav{
+.container-mobile-nav{
     display:flex;
     justify-content:space-around;
   }
@@ -193,6 +193,13 @@ ul {
   }
 }
 
+.cv-link{
+  color: #ffd700;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
 
 
 @media only screen and (max-width: 940px) {

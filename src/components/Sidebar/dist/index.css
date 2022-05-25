@@ -146,6 +146,14 @@
   color: #ffd700;
 }
 
+.cv-link {
+  color: #ffd700;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 940px) {
   .nav-bar {
     display: flex;

@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.tech-tag {
+  color: #ffd700;
+}
+
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;

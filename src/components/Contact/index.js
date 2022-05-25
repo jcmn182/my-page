@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,22 +17,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
-        form.current,
-        'your-token'
-      )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
+    emailjs.sendForm('service_y12akxm','template_2qy36i9',e.target,'i_R7YrPoxkvzRGAOU')
+    .then(() => {alert('Message successfully sent!');window.location.reload(false)},
+        () => {alert('Failed to send the message, please try again')})
+      e.target.reset()
   }
 
   return (
@@ -49,12 +35,12 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
+            I am interested in new opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form  onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -100,7 +86,7 @@ const Contact = () => {
           <MapContainer center={[20.696189, -103.454724]} zoom={11}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[20.696189, -103.454724]}>
-              <Popup>JC lives here, come over for a cup of coffee :)</Popup>
+              <Popup>I live here, come over for a cup of coffee, a glass of milk o a beer :)</Popup>
             </Marker>
           </MapContainer>
         </div>
