@@ -43,7 +43,7 @@ const About = () => {
           <p>
             You can checkout my cv on this  
             <a className="cv-link"
-            href="https://drive.google.com/file/d/10d4T4YXi0Te5HJCol3c5YRAGUMyCEr3U/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Hwjo4v5JGahrptpmmUNxCZfV2XtFncro/view?usp=sharing"
             target="_blank"
             rel="noreferrer">{" "}link!</a> 
           </p>
